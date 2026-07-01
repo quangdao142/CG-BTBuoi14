@@ -31,3 +31,14 @@ Vehicle boat = new Boat("Yamaha", 50);
 boat.Start();
 bike.Move();
 bike.Stop();
+
+Console.WriteLine("\nBai 3: IFly");
+Bird bird = new Bird();
+bird.Name = "Eagle";
+bird.Fly();
+
+Airplane airplane = new Airplane("Boeing", 1000);
+airplane.Fly();
+
+Superman superman = new Superman();
+superman.Fly();
