@@ -53,3 +53,13 @@ fish.Swim();
 Eagle eagle = new Eagle();
 eagle.Name = "Bald Eagle";
 eagle.Fly();
+
+Console.WriteLine("\nBai 5: Character");
+Character warrior = new Warrior("Garen", 100);
+warrior.Attack();
+
+Character archer = new Archer("Vayne", 80);
+archer.Attack();
+
+Character mage = new Mage("Lux", 60);
+mage.Attack();
