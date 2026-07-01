@@ -69,3 +69,10 @@ Enemy enemy = new Enemy("Enemy1", 50);
 enemy.TakeDamage(50);
 Boss boss = new Boss("Boss1", 200);
 boss.TakeDamage(150);
+
+Console.WriteLine("\nBai 7: Unity Style");
+player.Interact();
+Coin coin = new Coin();
+coin.Collect();
+Chest chest = new Chest();
+chest.Interact();

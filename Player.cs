@@ -1,6 +1,6 @@
 ﻿namespace CG_BTBuoi14
 {
-    public class Player : Character, IDamageable
+    public class Player : Character, IDamageable, IInteractable
     {
         public Player(string name, int hp)
         {
@@ -19,6 +19,10 @@
             {
                 Console.WriteLine($"{Name} dead.");
             }
+        }
+        public void Interact()
+        {
+            Console.WriteLine($"{Name} is interacting.");
         }
     }
 }
