@@ -57,9 +57,15 @@ eagle.Fly();
 Console.WriteLine("\nBai 5: Character");
 Character warrior = new Warrior("Garen", 100);
 warrior.Attack();
-
 Character archer = new Archer("Vayne", 80);
 archer.Attack();
-
 Character mage = new Mage("Lux", 60);
 mage.Attack();
+
+Console.WriteLine("\nBai 6: IDamageable");
+Player player = new Player("Player1", 100);
+player.TakeDamage(20);
+Enemy enemy = new Enemy("Enemy1", 50);
+enemy.TakeDamage(50);
+Boss boss = new Boss("Boss1", 200);
+boss.TakeDamage(150);
