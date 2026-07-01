@@ -11,7 +11,7 @@ cat.Name = "Mieo";
 cat.Eat();
 cat.Sound();
 
-Animal duck = new Duck();
+Duck duck = new Duck();
 duck.Name = "Donald";
 duck.Eat();
 duck.Sound();
@@ -42,3 +42,14 @@ airplane.Fly();
 
 Superman superman = new Superman();
 superman.Fly();
+
+Console.WriteLine("\nBai 4: Nhieu Interface");
+duck.Fly();
+duck.Swim();
+
+Fish fish = new Fish();
+fish.Swim();
+
+Eagle eagle = new Eagle();
+eagle.Name = "Bald Eagle";
+eagle.Fly();
