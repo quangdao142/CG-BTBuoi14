@@ -55,11 +55,11 @@ eagle.Name = "Bald Eagle";
 eagle.Fly();
 
 Console.WriteLine("\nBai 5: Character");
-Character warrior = new Warrior("Garen", 100);
+Warrior warrior = new Warrior("Garen", 100);
 warrior.Attack();
-Character archer = new Archer("Vayne", 80);
+Archer archer = new Archer("Vayne", 80);
 archer.Attack();
-Character mage = new Mage("Lux", 60);
+Mage mage = new Mage("Lux", 60);
 mage.Attack();
 
 Console.WriteLine("\nBai 6: IDamageable");
@@ -76,3 +76,27 @@ Coin coin = new Coin();
 coin.Collect();
 Chest chest = new Chest();
 chest.Interact();
+
+Console.WriteLine("\nBai 8: Employee");
+Employee fullTimeEmployee = new FullTimeEmployee("John", 20);
+fullTimeEmployee.CalculateSalary();
+Employee partTimeEmployee = new PartTimeEmployee("Jane", 15);
+partTimeEmployee.CalculateSalary();
+
+Console.WriteLine("\nBai 9: Payment");
+CreditCard creditCard = new CreditCard();
+creditCard.Pay(100.50m);
+PayPal payPal = new PayPal();
+payPal.Pay(200.75m);
+BankTransfer bankTransfer = new BankTransfer();
+bankTransfer.Pay(300.00m);
+
+Console.WriteLine("\nBai 10: Mini RPG");
+warrior.Move();
+warrior.TakeDamage(50);
+mage.Move();
+mage.TakeDamage(50);
+Healer healer = new Healer("Soraka", 70);
+healer.Move();
+healer.Attack();
+healer.Heal(30);
